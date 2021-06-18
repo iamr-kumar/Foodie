@@ -11,13 +11,14 @@ class MealItem extends StatelessWidget {
   final Complexity complexity;
   final Affordability affordability;
 
-  MealItem(
-      {this.title,
-      this.id,
-      this.imageUrl,
-      this.duration,
-      this.complexity,
-      this.affordability});
+  MealItem({
+    this.title,
+    this.id,
+    this.imageUrl,
+    this.duration,
+    this.complexity,
+    this.affordability,
+  });
 
   void selectMeal(BuildContext context) {
     Navigator.pushNamed(context, MealDetails.routeName, arguments: id);
